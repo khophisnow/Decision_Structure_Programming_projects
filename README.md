@@ -1,4 +1,5 @@
 # 🛡️ Decision Structure Programming Projects – Cyber Console Mode 🧠
+
 Hands-on solutions to decision structure exercises from the Gaddis C++ Programming textbook. Implemented using modular design principles and wrapped in a themed "Cyber Mode" console interface for an engaging software-dev meets cybersecurity learning experience.
 
 This C++ project is a collection of decision structure exercises (control flow, branching, logic-based problems) built with a clean, modular, and security-themed interface.
@@ -15,7 +16,7 @@ After completing Modular Programming exercises, this series explores decision st
 
 ## 📂 Folder Structure
 
-```
+```bash
 Decision_Structure_Programming_projects/
 ├── decisionStructureProgrammingMain.cpp
 ├── decisionStructureProgrammingQuestions/
@@ -45,7 +46,7 @@ make
 
 ## 🧠 Sample: Roman Numerals Converter (ds1)
 
-```
+```bash
 [SECURE_INPUT] Enter a number (1–10) or 0 to exit:
 ➤ Roman Numeral: VIII
 ```
