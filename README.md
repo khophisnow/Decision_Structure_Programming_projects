@@ -1,18 +1,23 @@
 # 🛡️ Decision Structure Programming Projects – Cyber Console Mode 🧠
 
-Hands-on solutions to decision structure exercises from the Gaddis C++ Programming textbook. Implemented using modular design principles and wrapped in a themed "Cyber Mode" console interface for an engaging software-dev meets cybersecurity learning experience.
+Hands-on solutions to decision structure exercises from the Gaddis C++ Programming textbook. Implemented using modular design principles and wrapped in a themed **Cyber Mode** console interface for an engaging software-dev meets cybersecurity learning experience.
 
 This C++ project is a collection of decision structure exercises (control flow, branching, logic-based problems) built with a clean, modular, and security-themed interface.
+
+---
 
 ## 🚀 About the Project
 
 After completing Modular Programming exercises, this series explores decision structures using:
 
 - 📦 **Namespace modules** like `ds1::run()` for each task
-- 🖥️ **Cyber-themed UI** with box-drawn menus and emojis
+- 🖥️ **Cyber-themed UI** with box-drawn menus and emoji feedback
 - 🧪 **Clean Makefile builds**
 - 🧠 **Control logic** using `switch`, `if`, validation, and looping
-- 🧰 **Scalable design** for adding new exercises easily
+- 🧰 **Rerun logic** for repeatable testing of each module
+- 🧩 **Scalable design** for easily extending to all 11 exercises
+
+---
 
 ## 📂 Folder Structure
 
@@ -22,17 +27,26 @@ Decision_Structure_Programming_projects/
 ├── decisionStructureProgrammingQuestions/
 │   ├── decisionStructureProgrammingQuestions1.cpp
 │   ├── decisionStructureProgrammingQuestions1.h
+│   ├── decisionStructureProgrammingQuestions2.cpp
+│   ├── decisionStructureProgrammingQuestions2.h
 │   └── ...
 ├── Makefile
 └── README.md
 ```
 
+---
+
 ## ✅ Completed Exercises
 
-| Exercise | Description                | Module   |
-|----------|----------------------------|----------|
-| 1        | Roman Numerals Converter   | `ds1`    |
-| 2–11     | *(To be completed)*        | `ds2–ds11` |
+| Exercise | Description                         | Module   |
+|----------|-------------------------------------|----------|
+| 1        | 🛡️ Roman Numerals Converter          | `ds1`    |
+| 2        | 📐 Greater Rectangle Area Comparator | `ds2`    |
+| 3–11     | *(Coming soon...)*                  | `ds3–ds11` |
+
+Each module uses secure input handling, dynamic cyber console UI, and modular headers.
+
+---
 
 ## 🛠️ Build & Run
 
@@ -44,21 +58,30 @@ make
 ./decisionStructureProgram
 ```
 
-## 🧠 Sample: Roman Numerals Converter (ds1)
+---
+
+## 🧠 Sample: Rectangle Area Comparator (ds2)
 
 ```bash
-[SECURE_INPUT] Enter a number (1–10) or 0 to exit:
-➤ Roman Numeral: VIII
+[SECURE_INPUT] Provide dimensions of two rectangles
+➤ Area of Rectangle I  : 25
+➤ Area of Rectangle II : 30
+➤ Rectangle II has the greater area 🔺
 ```
 
-> 💬 Input validation, `switch-case`, and console UI included.
+> 💬 Each exercise supports rerun without restarting the program.
+
+---
 
 ## 🧪 Technologies Used
 
 - C++11/14
-- Standard IO & Limits
-- Modular headers
-- Makefile (manual builds)
+- Standard IO + error handling
+- Modular headers (`.h` + `.cpp`)
+- Emoji + ASCII-based UI design
+- Makefile for automation
+
+---
 
 ## 🤖 Author
 
@@ -66,10 +89,13 @@ make
 GitHub: [khophisnow](https://github.com/khophisnow)  
 Cyber | Software | STEM
 
+---
+
 ## 📜 License
 
-MIT License (you are free to use/modify this for education or open-source)
+MIT License (Free for education, learning, and contribution)
 
 ---
 
-**Keep checking back** as I complete all 11 exercises. Each module will reflect better logic, cleaner structure, and hacker-grade clarity.  
+**Stay tuned for more modules!**  
+Each new exercise levels up the logic, readability, and secure dev practices.
