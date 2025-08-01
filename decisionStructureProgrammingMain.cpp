@@ -1,6 +1,7 @@
 #include <iostream>
 #include <iomanip>
 #include <limits>
+#include <string>
 #include "decisionStructureProgrammingQuestions/decisionStructureProgrammingQuestions1.h"
 #include "decisionStructureProgrammingQuestions/decisionStructureProgrammingQuestions2.h"
 #include "decisionStructureProgrammingQuestions/decisionStructureProgrammingQuestions3.h"
@@ -37,7 +38,8 @@ void displayCyberMenu()
     insertMenuPadding(ds2::getMenuLabel(), 2);
 
     std::cout << "║ ";
-    insertMenuPadding("Decision 3", 3);
+    insertMenuPadding(ds3::getMenuLabel(), 3);
+
     std::cout << "║ ";
     insertMenuPadding("Decision 4", 4);
     std::cout << "║ ";
@@ -123,7 +125,7 @@ int main()
         case 3:
             std::cout << "[+] Running: ds3::run()\n";
             ds3::run();
-            pressEnterToContinue();
+            pressEnterToContinue(ds3::getHeader());
             break;
         case 4:
             std::cout << "[+] Running: ds4::run()\n";
