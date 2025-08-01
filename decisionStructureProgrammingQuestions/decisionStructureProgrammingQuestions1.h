@@ -6,6 +6,7 @@
 
 namespace ds1 {
     std::string getHeader();
+    std::string getMenuLabel();
     void run();
     void insertPadding(std::string &roman);
 }

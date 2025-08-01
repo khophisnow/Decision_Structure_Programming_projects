@@ -17,6 +17,10 @@ namespace ds1
     {
         return "🛡️ ROMAN NUMERALS CONVERTER 🧠";
     }
+    std::string getMenuLabel()
+    {
+        return "ROMAN NUMERALS CONVERTER";
+    }
 
     void run()
     {

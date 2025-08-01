@@ -13,23 +13,50 @@
 #include "decisionStructureProgrammingQuestions/decisionStructureProgrammingQuestions10.h"
 #include "decisionStructureProgrammingQuestions/decisionStructureProgrammingQuestions11.h"
 
+void insertMenuPadding(const std::string &label, int optionNumber, int totalWidth = 53)
+{
+    std::string prefix = std::to_string(optionNumber) + ". ";
+    int pad = totalWidth - static_cast<int>(prefix.length() + label.length());
+    std::cout << prefix << label;
+    for (int i = 0; i < pad; ++i)
+        std::cout << " ";
+    std::cout << "║\n";
+}
+
 void displayCyberMenu()
 {
     std::cout << "\n╔══════════════════════════════════════════════════════╗\n";
     std::cout << "║  🛡️  DECISION STRUCTURE LAB CONSOLE - CYBER MODE 🧠   ║\n";
     std::cout << "╠══════════════════════════════════════════════════════╣\n";
-    std::cout << "║ 1. Roman Numerals Converter                          ║\n";
-    std::cout << "║ 2. Decision 2                                        ║\n";
-    std::cout << "║ 3. Decision 3                                        ║\n";
-    std::cout << "║ 4. Decision 4                                        ║\n";
-    std::cout << "║ 5. Decision 5                                        ║\n";
-    std::cout << "║ 6. Decision 6                                        ║\n";
-    std::cout << "║ 7. Decision 7                                        ║\n";
-    std::cout << "║ 8. Decision 8                                        ║\n";
-    std::cout << "║ 9. Decision 9                                        ║\n";
-    std::cout << "║ 10. Decision 10                                      ║\n";
-    std::cout << "║ 11. Decision 11                                      ║\n";
-    std::cout << "║ 0. Exit                                              ║\n";
+
+    // Use aligned menu labels
+    std::cout << "║ ";
+    insertMenuPadding(ds1::getMenuLabel(), 1);
+
+    std::cout << "║ ";
+    insertMenuPadding(ds2::getMenuLabel(), 2);
+
+    std::cout << "║ ";
+    insertMenuPadding("Decision 3", 3);
+    std::cout << "║ ";
+    insertMenuPadding("Decision 4", 4);
+    std::cout << "║ ";
+    insertMenuPadding("Decision 5", 5);
+    std::cout << "║ ";
+    insertMenuPadding("Decision 6", 6);
+    std::cout << "║ ";
+    insertMenuPadding("Decision 7", 7);
+    std::cout << "║ ";
+    insertMenuPadding("Decision 8", 8);
+    std::cout << "║ ";
+    insertMenuPadding("Decision 9", 9);
+    std::cout << "║ ";
+    insertMenuPadding("Decision 10", 10);
+    std::cout << "║ ";
+    insertMenuPadding("Decision 11", 11);
+    std::cout << "║ ";
+    insertMenuPadding("Exit", 0);
+
     std::cout << "╚══════════════════════════════════════════════════════╝\n";
 }
 
@@ -90,7 +117,7 @@ int main()
         case 2:
             std::cout << "[+] Running: ds2::run()\n";
             ds2::run();
-            pressEnterToContinue();
+            pressEnterToContinue(ds2::getHeader());
 
             break;
         case 3:
